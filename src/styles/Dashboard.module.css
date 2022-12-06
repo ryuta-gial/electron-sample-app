@@ -1,0 +1,16 @@
+.text_area {
+    margin: 0px;
+    width: 423px;
+    height: 24px;
+}
+
+.read_data_title{
+    margin: 10px 5px 0px 5px;
+}
+
+.close_btn {
+    width: 300px;
+    height: 60px;
+    background-color: skyblue;
+    padding: 16px;
+}

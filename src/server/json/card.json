@@ -1,0 +1,2910 @@
+{
+  "@class": "card",
+  "_packing": {
+    "id": "NNG",
+    "version": 1,
+    "maxNumber": 61
+  },
+  "idAttributes": [],
+  "summaryAttributes": [
+    "page1.dispatchDate"
+  ],
+  "sortKeyAttributes": [
+    "page1.dispatchDate"
+  ],
+  "numbering": [],
+  "pages": [
+    {
+      "@class": "page",
+      "name": "page1",
+      "title": {
+        "ja": "ページ1",
+        "en": "Page 1"
+      },
+      "items": [
+        {
+          "@class": "attribute",
+          "name": "dispatchDate",
+          "title": {
+            "ja": "出動日",
+            "en": ""
+          },
+          "type": "date",
+          "required": false,
+          "_packing": {
+            "number": 0
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "dispatchCar",
+          "title": {
+            "ja": "出動車",
+            "en": ""
+          },
+          "type": "single",
+          "required": false,
+          "choices": [
+            {
+              "value": 0,
+              "title": {
+                "ja": "エスティマ",
+                "en": ""
+              },
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "value": 1,
+              "title": {
+                "ja": "NINO",
+                "en": ""
+              },
+              "_packing": {
+                "number": 1
+              }
+            }
+          ],
+          "_packing": {
+            "number": 1
+          }
+        },
+        {
+          "@class": "group",
+          "name": "RequestingAgency",
+          "title": {
+            "ja": "要請機関",
+            "en": ""
+          },
+          "type": "single",
+          "choices": [
+            {
+              "title": {
+                "ja": "消防庁",
+                "en": ""
+              },
+              "value": 0,
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "title": {
+                "ja": "救急隊",
+                "en": ""
+              },
+              "value": 1,
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "title": {
+                "ja": "他医療機関",
+                "en": ""
+              },
+              "value": 2,
+              "_packing": {
+                "number": 2
+              }
+            },
+            {
+              "title": {
+                "ja": "院内",
+                "en": ""
+              },
+              "value": 3,
+              "_packing": {
+                "number": 3
+              }
+            }
+          ],
+          "activation": {
+            "3": [
+              {
+                "@class": "attribute",
+                "name": "RequestingAgencyWithinTheHospital",
+                "title": {
+                  "ja": "要請機関_院内",
+                  "en": ""
+                },
+                "type": "string",
+                "required": false,
+                "suffix": {
+                  "ja": "科",
+                  "en": ""
+                },
+                "max_length": 20,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 2
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "dispatchClassification",
+          "title": {
+            "ja": "出動区分",
+            "en": ""
+          },
+          "type": "single",
+          "required": false,
+          "choices": [
+            {
+              "value": 0,
+              "title": {
+                "ja": "救急出動",
+                "en": ""
+              },
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "value": 1,
+              "title": {
+                "ja": "転院搬送",
+                "en": ""
+              },
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "value": 2,
+              "title": {
+                "ja": "途中キャンセル",
+                "en": ""
+              },
+              "_packing": {
+                "number": 2
+              }
+            }
+          ],
+          "_packing": {
+            "number": 3
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "accidentType",
+          "title": {
+            "ja": "事故種別",
+            "en": ""
+          },
+          "type": "single",
+          "required": false,
+          "choices": [
+            {
+              "value": 0,
+              "title": {
+                "ja": "火事",
+                "en": ""
+              },
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "value": 1,
+              "title": {
+                "ja": "自然災害",
+                "en": ""
+              },
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "value": 2,
+              "title": {
+                "ja": "水難",
+                "en": ""
+              },
+              "_packing": {
+                "number": 2
+              }
+            },
+            {
+              "value": 3,
+              "title": {
+                "ja": "交通事故",
+                "en": ""
+              },
+              "_packing": {
+                "number": 3
+              }
+            },
+            {
+              "value": 4,
+              "title": {
+                "ja": "労働災害",
+                "en": ""
+              },
+              "_packing": {
+                "number": 4
+              }
+            },
+            {
+              "value": 5,
+              "title": {
+                "ja": "運動競技",
+                "en": ""
+              },
+              "_packing": {
+                "number": 5
+              }
+            },
+            {
+              "value": 6,
+              "title": {
+                "ja": "急病",
+                "en": ""
+              },
+              "_packing": {
+                "number": 6
+              }
+            },
+            {
+              "value": 7,
+              "title": {
+                "ja": "一般損傷",
+                "en": ""
+              },
+              "_packing": {
+                "number": 7
+              }
+            },
+            {
+              "value": 8,
+              "title": {
+                "ja": "自損行為",
+                "en": ""
+              },
+              "_packing": {
+                "number": 8
+              }
+            },
+            {
+              "value": 9,
+              "title": {
+                "ja": "その他",
+                "en": ""
+              },
+              "_packing": {
+                "number": 9
+              }
+            }
+          ],
+          "_packing": {
+            "number": 4
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "RequestKeyword",
+          "title": {
+            "ja": "要請キーワード",
+            "en": ""
+          },
+          "type": "string",
+          "required": false,
+          "max_length": 30,
+          "_packing": {
+            "number": 5
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "CooperationFirstAidTeam",
+          "title": {
+            "ja": "連携救急隊",
+            "en": ""
+          },
+          "type": "dropdown",
+          "required": false,
+          "choices": [
+            {
+              "value": 0,
+              "title": {
+                "ja": "多摩",
+                "en": ""
+              },
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "value": 1,
+              "title": {
+                "ja": "多摩センター",
+                "en": ""
+              },
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "value": 2,
+              "title": {
+                "ja": "稲城",
+                "en": ""
+              },
+              "_packing": {
+                "number": 2
+              }
+            },
+            {
+              "value": 3,
+              "title": {
+                "ja": "北野第１",
+                "en": ""
+              },
+              "_packing": {
+                "number": 3
+              }
+            },
+            {
+              "value": 4,
+              "title": {
+                "ja": "北野第2",
+                "en": ""
+              },
+              "_packing": {
+                "number": 4
+              }
+            },
+            {
+              "value": 5,
+              "title": {
+                "ja": "国立",
+                "en": ""
+              },
+              "_packing": {
+                "number": 5
+              }
+            },
+            {
+              "value": 6,
+              "title": {
+                "ja": "国分寺",
+                "en": ""
+              },
+              "_packing": {
+                "number": 6
+              }
+            },
+            {
+              "value": 7,
+              "title": {
+                "ja": "国領",
+                "en": ""
+              },
+              "_packing": {
+                "number": 7
+              }
+            },
+            {
+              "value": 8,
+              "title": {
+                "ja": "小宮",
+                "en": ""
+              },
+              "_packing": {
+                "number": 8
+              }
+            },
+            {
+              "value": 9,
+              "title": {
+                "ja": "是政",
+                "en": ""
+              },
+              "_packing": {
+                "number": 9
+              }
+            },
+            {
+              "value": 10,
+              "title": {
+                "ja": "相模原津久井",
+                "en": ""
+              },
+              "_packing": {
+                "number": 10
+              }
+            },
+            {
+              "value": 11,
+              "title": {
+                "ja": "高幡",
+                "en": ""
+              },
+              "_packing": {
+                "number": 11
+              }
+            },
+            {
+              "value": 12,
+              "title": {
+                "ja": "忠生",
+                "en": ""
+              },
+              "_packing": {
+                "number": 12
+              }
+            },
+            {
+              "value": 13,
+              "title": {
+                "ja": "調布",
+                "en": ""
+              },
+              "_packing": {
+                "number": 13
+              }
+            },
+            {
+              "value": 14,
+              "title": {
+                "ja": "鶴川",
+                "en": ""
+              },
+              "_packing": {
+                "number": 14
+              }
+            },
+            {
+              "value": 15,
+              "title": {
+                "ja": "豊田",
+                "en": ""
+              },
+              "_packing": {
+                "number": 15
+              }
+            },
+            {
+              "value": 16,
+              "title": {
+                "ja": "成瀬",
+                "en": ""
+              },
+              "_packing": {
+                "number": 16
+              }
+            },
+            {
+              "value": 17,
+              "title": {
+                "ja": "錦町",
+                "en": ""
+              },
+              "_packing": {
+                "number": 17
+              }
+            },
+            {
+              "value": 18,
+              "title": {
+                "ja": "西町田",
+                "en": ""
+              },
+              "_packing": {
+                "number": 18
+              }
+            },
+            {
+              "value": 19,
+              "title": {
+                "ja": "日野",
+                "en": ""
+              },
+              "_packing": {
+                "number": 19
+              }
+            },
+            {
+              "value": 20,
+              "title": {
+                "ja": "府中",
+                "en": ""
+              },
+              "_packing": {
+                "number": 20
+              }
+            },
+            {
+              "value": 21,
+              "title": {
+                "ja": "分梅",
+                "en": ""
+              },
+              "_packing": {
+                "number": 21
+              }
+            },
+            {
+              "value": 22,
+              "title": {
+                "ja": "不明",
+                "en": ""
+              },
+              "_packing": {
+                "number": 22
+              }
+            },
+            {
+              "value": 23,
+              "title": {
+                "ja": "町田第一",
+                "en": ""
+              },
+              "_packing": {
+                "number": 23
+              }
+            },
+            {
+              "value": 24,
+              "title": {
+                "ja": "町田第二",
+                "en": ""
+              },
+              "_packing": {
+                "number": 24
+              }
+            },
+            {
+              "value": 25,
+              "title": {
+                "ja": "由木",
+                "en": ""
+              },
+              "_packing": {
+                "number": 25
+              }
+            }
+          ],
+          "_packing": {
+            "number": 6
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "TimeElapsedKnowledge",
+          "title": {
+            "ja": "時間経過_覚知",
+            "en": ""
+          },
+          "type": "time",
+          "required": false,
+          "_packing": {
+            "number": 7
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "TimeElapsedSickness",
+          "title": {
+            "ja": "時間経過_病発",
+            "en": ""
+          },
+          "type": "time",
+          "required": false,
+          "_packing": {
+            "number": 8
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "TimeElapsedPresentArrival",
+          "title": {
+            "ja": "時間経過_現着",
+            "en": ""
+          },
+          "type": "time",
+          "required": false,
+          "_packing": {
+            "number": 9
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "TimeElapsedContact",
+          "title": {
+            "ja": "時間経過_接触",
+            "en": ""
+          },
+          "type": "time",
+          "required": false,
+          "_packing": {
+            "number": 10
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "TimeElapsedPresent",
+          "title": {
+            "ja": "時間経過_現発",
+            "en": ""
+          },
+          "type": "time",
+          "required": false,
+          "_packing": {
+            "number": 11
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "TimeElapsedSickArrival",
+          "title": {
+            "ja": "時間経過_病着",
+            "en": ""
+          },
+          "type": "time",
+          "required": false,
+          "_packing": {
+            "number": 12
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "ContactSituation",
+          "title": {
+            "ja": "接触時の状況",
+            "en": ""
+          },
+          "type": "single",
+          "required": false,
+          "choices": [
+            {
+              "value": 0,
+              "title": {
+                "ja": "最先着",
+                "en": ""
+              },
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "value": 1,
+              "title": {
+                "ja": "ポンプのみ",
+                "en": ""
+              },
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "value": 2,
+              "title": {
+                "ja": "救急車あり",
+                "en": ""
+              },
+              "_packing": {
+                "number": 2
+              }
+            }
+          ],
+          "_packing": {
+            "number": 13
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "PatientLocation",
+          "title": {
+            "ja": "患者の場所",
+            "en": ""
+          },
+          "type": "single",
+          "required": false,
+          "choices": [
+            {
+              "value": 0,
+              "title": {
+                "ja": "現場",
+                "en": ""
+              },
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "value": 1,
+              "title": {
+                "ja": "救急車内",
+                "en": ""
+              },
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "value": 2,
+              "title": {
+                "ja": "その他",
+                "en": ""
+              },
+              "_packing": {
+                "number": 2
+              }
+            }
+          ],
+          "_packing": {
+            "number": 14
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "StatusDetails",
+          "title": {
+            "ja": "詳細",
+            "en": ""
+          },
+          "type": "text",
+          "required": false,
+          "max_length": 50,
+          "_packing": {
+            "number": 15
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "name",
+          "title": {
+            "ja": "氏名",
+            "en": ""
+          },
+          "type": "string",
+          "required": false,
+          "max_length": 30,
+          "_packing": {
+            "number": 16
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "furigana",
+          "title": {
+            "ja": "フリガナ",
+            "en": ""
+          },
+          "type": "string",
+          "required": false,
+          "max_length": 30,
+          "_packing": {
+            "number": 17
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "gender",
+          "title": {
+            "ja": "性別",
+            "en": ""
+          },
+          "type": "single",
+          "required": false,
+          "choices": [
+            {
+              "value": 0,
+              "title": {
+                "ja": "男",
+                "en": ""
+              },
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "value": 1,
+              "title": {
+                "ja": "女",
+                "en": ""
+              },
+              "_packing": {
+                "number": 1
+              }
+            }
+          ],
+          "_packing": {
+            "number": 18
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "patient_age",
+          "title": {
+            "ja": "患者年齢",
+            "en": ""
+          },
+          "type": "age",
+          "required": false,
+          "_packing": {
+            "number": 19
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "tel1",
+          "title": {
+            "ja": "電話1",
+            "en": ""
+          },
+          "type": "string",
+          "required": false,
+          "max_length": 15,
+          "_packing": {
+            "number": 20
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "address",
+          "title": {
+            "ja": "住所",
+            "en": ""
+          },
+          "type": "text",
+          "required": false,
+          "max_length": 50,
+          "suggestions": [
+            "稲城市",
+            "相模原市",
+            "多摩市",
+            "八王子市",
+            "日野市",
+            "府中市",
+            "町田市",
+            "横浜市"
+          ],
+          "_packing": {
+            "number": 21
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "tel2",
+          "title": {
+            "ja": "電話2",
+            "en": ""
+          },
+          "type": "string",
+          "required": false,
+          "max_length": 15,
+          "_packing": {
+            "number": 22
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "placeOfOccurrenceLabel",
+          "title": {
+            "ja": "発生場所",
+            "en": ""
+          },
+          "type": "label",
+          "required": false
+        },
+        {
+          "@class": "attribute",
+          "name": "placeOfOccurrenceSame",
+          "title": {
+            "ja": "住所と同じ",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "_packing": {
+            "number": 23
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "placeOfOccurrence",
+          "title": {
+            "ja": "発生場所（住所と異なる場合入力）",
+            "en": ""
+          },
+          "type": "string",
+          "required": false,
+          "max_length": 30,
+          "_packing": {
+            "number": 24
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "actualMedicalHistory",
+          "title": {
+            "ja": "現病歴",
+            "en": ""
+          },
+          "type": "string",
+          "required": false,
+          "max_length": 30,
+          "_packing": {
+            "number": 25
+          }
+        },
+        {
+          "@class": "group",
+          "name": "medicalHistory",
+          "title": {
+            "ja": "既往歴",
+            "en": ""
+          },
+          "type": "multi",
+          "required": false,
+          "choices": [
+            {
+              "value": 0,
+              "title": {
+                "ja": "高血圧",
+                "en": ""
+              },
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "value": 1,
+              "title": {
+                "ja": "糖尿病",
+                "en": ""
+              },
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "value": 2,
+              "title": {
+                "ja": "喘息",
+                "en": ""
+              },
+              "_packing": {
+                "number": 2
+              }
+            },
+            {
+              "value": 3,
+              "title": {
+                "ja": "その他",
+                "en": ""
+              },
+              "_packing": {
+                "number": 3
+              }
+            }
+          ],
+          "activation": {
+            "3": [
+              {
+                "@class": "attribute",
+                "name": "medicalHistoryOther",
+                "title": {
+                  "ja": "その他_既往歴",
+                  "en": ""
+                },
+                "type": "text",
+                "required": false,
+                "max_length": 50,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 26
+          }
+        },
+        {
+          "@class": "group",
+          "name": "outcome",
+          "title": {
+            "ja": "転帰",
+            "en": ""
+          },
+          "type": "single",
+          "required": false,
+          "choices": [
+            {
+              "value": 0,
+              "title": {
+                "ja": "死亡（現場）",
+                "en": ""
+              },
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "value": 1,
+              "title": {
+                "ja": "死亡（初療室）",
+                "en": ""
+              },
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "value": 2,
+              "title": {
+                "ja": "入室",
+                "en": ""
+              },
+              "_packing": {
+                "number": 2
+              }
+            },
+            {
+              "value": 3,
+              "title": {
+                "ja": "帰宅",
+                "en": ""
+              },
+              "_packing": {
+                "number": 3
+              }
+            },
+            {
+              "value": 4,
+              "title": {
+                "ja": "不明",
+                "en": ""
+              },
+              "_packing": {
+                "number": 4
+              }
+            }
+          ],
+          "activation": {
+            "0": [
+              {
+                "@class": "attribute",
+                "name": "DeathClassification",
+                "title": {
+                  "ja": "死亡（現場）分類",
+                  "en": ""
+                },
+                "type": "single",
+                "required": false,
+                "choices": [
+                  {
+                    "value": 0,
+                    "title": {
+                      "ja": "死亡（救急隊による社会死）",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 0
+                    }
+                  },
+                  {
+                    "value": 1,
+                    "title": {
+                      "ja": "死亡（医師死亡確認）",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 1
+                    }
+                  }
+                ],
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 27
+          }
+        },
+        {
+          "@class": "group",
+          "name": "injuryName",
+          "title": {
+            "ja": "傷病名",
+            "en": ""
+          },
+          "type": "dropdown",
+          "required": false,
+          "choices": [
+            {
+              "value": 0,
+              "title": {
+                "ja": "頭部外傷",
+                "en": ""
+              },
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "value": 1,
+              "title": {
+                "ja": "胸部外傷",
+                "en": ""
+              },
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "value": 2,
+              "title": {
+                "ja": "腹部外傷",
+                "en": ""
+              },
+              "_packing": {
+                "number": 2
+              }
+            },
+            {
+              "value": 3,
+              "title": {
+                "ja": "四肢骨盤外傷",
+                "en": ""
+              },
+              "_packing": {
+                "number": 3
+              }
+            },
+            {
+              "value": 4,
+              "title": {
+                "ja": "脊椎外傷",
+                "en": ""
+              },
+              "_packing": {
+                "number": 4
+              }
+            },
+            {
+              "value": 5,
+              "title": {
+                "ja": "その他の外傷",
+                "en": ""
+              },
+              "_packing": {
+                "number": 5
+              }
+            },
+            {
+              "value": 6,
+              "title": {
+                "ja": "中毒",
+                "en": ""
+              },
+              "_packing": {
+                "number": 6
+              }
+            },
+            {
+              "value": 7,
+              "title": {
+                "ja": "熱傷",
+                "en": ""
+              },
+              "_packing": {
+                "number": 7
+              }
+            },
+            {
+              "value": 8,
+              "title": {
+                "ja": "CPA（外因）",
+                "en": ""
+              },
+              "_packing": {
+                "number": 8
+              }
+            },
+            {
+              "value": 9,
+              "title": {
+                "ja": "CPA（内因）",
+                "en": ""
+              },
+              "_packing": {
+                "number": 9
+              }
+            },
+            {
+              "value": 10,
+              "title": {
+                "ja": "中枢神経疾患",
+                "en": ""
+              },
+              "_packing": {
+                "number": 10
+              }
+            },
+            {
+              "value": 11,
+              "title": {
+                "ja": "脳血管障害",
+                "en": ""
+              },
+              "_packing": {
+                "number": 11
+              }
+            },
+            {
+              "value": 12,
+              "title": {
+                "ja": "てんかん",
+                "en": ""
+              },
+              "_packing": {
+                "number": 12
+              }
+            },
+            {
+              "value": 13,
+              "title": {
+                "ja": "循環器疾患",
+                "en": ""
+              },
+              "_packing": {
+                "number": 13
+              }
+            },
+            {
+              "value": 14,
+              "title": {
+                "ja": "その他の心疾患",
+                "en": ""
+              },
+              "_packing": {
+                "number": 14
+              }
+            },
+            {
+              "value": 15,
+              "title": {
+                "ja": "呼吸器疾患",
+                "en": ""
+              },
+              "_packing": {
+                "number": 15
+              }
+            },
+            {
+              "value": 16,
+              "title": {
+                "ja": "消化器疾患",
+                "en": ""
+              },
+              "_packing": {
+                "number": 16
+              }
+            },
+            {
+              "value": 17,
+              "title": {
+                "ja": "急性腹症",
+                "en": ""
+              },
+              "_packing": {
+                "number": 17
+              }
+            },
+            {
+              "value": 18,
+              "title": {
+                "ja": "アレルギー",
+                "en": ""
+              },
+              "_packing": {
+                "number": 18
+              }
+            },
+            {
+              "value": 19,
+              "title": {
+                "ja": "感染症",
+                "en": ""
+              },
+              "_packing": {
+                "number": 19
+              }
+            },
+            {
+              "value": 20,
+              "title": {
+                "ja": "代謝性疾患",
+                "en": ""
+              },
+              "_packing": {
+                "number": 20
+              }
+            },
+            {
+              "value": 21,
+              "title": {
+                "ja": "その他",
+                "en": ""
+              },
+              "_packing": {
+                "number": 21
+              }
+            }
+          ],
+          "activation": {
+            "21": [
+              {
+                "@class": "attribute",
+                "name": "injuryNameOther",
+                "title": {
+                  "ja": "傷病名_その他詳細",
+                  "en": ""
+                },
+                "type": "text",
+                "required": false,
+                "max_length": 50,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 28
+          }
+        },
+        {
+          "@class": "group",
+          "name": "transportDestination",
+          "title": {
+            "ja": "搬送先",
+            "en": ""
+          },
+          "type": "single",
+          "choices": [
+            {
+              "title": {
+                "ja": "搬送せず",
+                "en": ""
+              },
+              "value": 0,
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "title": {
+                "ja": "永山救命",
+                "en": ""
+              },
+              "value": 1,
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "title": {
+                "ja": "他医療機関",
+                "en": ""
+              },
+              "value": 2,
+              "_packing": {
+                "number": 2
+              }
+            },
+            {
+              "title": {
+                "ja": "その他",
+                "en": ""
+              },
+              "value": 3,
+              "_packing": {
+                "number": 3
+              }
+            }
+          ],
+          "activation": {
+            "2": [
+              {
+                "@class": "attribute",
+                "name": "transportDestinationOther",
+                "title": {
+                  "ja": "他医療機関_種類",
+                  "en": ""
+                },
+                "type": "single",
+                "required": false,
+                "choices": [
+                  {
+                    "title": {
+                      "ja": "2次",
+                      "en": ""
+                    },
+                    "value": 0,
+                    "_packing": {
+                      "number": 0
+                    }
+                  },
+                  {
+                    "title": {
+                      "ja": "3次",
+                      "en": ""
+                    },
+                    "value": 1,
+                    "_packing": {
+                      "number": 1
+                    }
+                  }
+                ],
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ],
+            "3": [
+              {
+                "@class": "attribute",
+                "name": "transportDestinationOther",
+                "title": {
+                  "ja": "その他_搬送先名",
+                  "en": ""
+                },
+                "type": "string",
+                "required": false,
+                "max_length": 30,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 29
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "doctorRideToAmbulance",
+          "title": {
+            "ja": "救急車への医師の同乗",
+            "en": ""
+          },
+          "type": "single",
+          "required": false,
+          "choices": [
+            {
+              "title": {
+                "ja": "あり",
+                "en": ""
+              },
+              "value": 0,
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "title": {
+                "ja": "なし",
+                "en": ""
+              },
+              "value": 1,
+              "_packing": {
+                "number": 1
+              }
+            }
+          ],
+          "_packing": {
+            "number": 30
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "treatmentContentLabel",
+          "title": {
+            "ja": "処置内容",
+            "en": ""
+          },
+          "type": "label"
+        },
+        {
+          "@class": "group",
+          "name": "securingTheVein",
+          "title": {
+            "ja": "静脈路確保",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "securingTheVeinTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 31
+          }
+        },
+        {
+          "@class": "group",
+          "name": "thoracicDrainage",
+          "title": {
+            "ja": "胸腔ドレナージ",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "thoracicDrainageTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 32
+          }
+        },
+        {
+          "@class": "group",
+          "name": "trachealIntubation",
+          "title": {
+            "ja": "気管挿管",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "trachealIntubationTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 33
+          }
+        },
+        {
+          "@class": "group",
+          "name": "vitalMeasurement",
+          "title": {
+            "ja": "バイタル測定",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "vitalMeasurementTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "vitalMeasurementJcsI",
+                "title": {
+                  "ja": "意識jcsI",
+                  "en": ""
+                },
+                "type": "dropdown",
+                "required": false,
+                "choices": [
+                  {
+                    "value": 0,
+                    "title": {
+                      "ja": "意識晴明",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 0
+                    }
+                  },
+                  {
+                    "value": 1,
+                    "title": {
+                      "ja": "だいたい晴明であるが、今ひとつはっきりしない",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 1
+                    }
+                  },
+                  {
+                    "value": 2,
+                    "title": {
+                      "ja": "見当識障害がある（場所や時間、日付がわからない）",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 2
+                    }
+                  },
+                  {
+                    "value": 3,
+                    "title": {
+                      "ja": "自分の名前、生年月日が言えない",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 3
+                    }
+                  }
+                ],
+                "_packing": {
+                  "number": 1
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "vitalMeasurementJcsII",
+                "title": {
+                  "ja": "意識jcsII",
+                  "en": ""
+                },
+                "type": "dropdown",
+                "required": false,
+                "choices": [
+                  {
+                    "value": 0,
+                    "title": {
+                      "ja": "普通の呼びかけで容易に開眼する",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 0
+                    }
+                  },
+                  {
+                    "value": 1,
+                    "title": {
+                      "ja": "大きな声または体を揺さぶることにより開眼する",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 1
+                    }
+                  },
+                  {
+                    "value": 2,
+                    "title": {
+                      "ja": "痛み刺激を加えつつ呼びかけを繰り返すことにより開眼する",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 2
+                    }
+                  }
+                ],
+                "_packing": {
+                  "number": 2
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "vitalMeasurementJcsIII",
+                "title": {
+                  "ja": "意識jcsIII",
+                  "en": ""
+                },
+                "type": "dropdown",
+                "required": false,
+                "choices": [
+                  {
+                    "value": 0,
+                    "title": {
+                      "ja": "痛み刺激に対し、払いのける動作をする",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 0
+                    }
+                  },
+                  {
+                    "value": 1,
+                    "title": {
+                      "ja": "痛み刺激に対し、少し手足を動かしたり、顔をしかめたりする",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 1
+                    }
+                  },
+                  {
+                    "value": 2,
+                    "title": {
+                      "ja": "痛み刺激に反応しない",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 2
+                    }
+                  }
+                ],
+                "_packing": {
+                  "number": 3
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "vitalMeasurementBP",
+                "title": {
+                  "ja": "BP",
+                  "en": ""
+                },
+                "type": "number",
+                "required": false,
+                "number_format": {
+                  "precision": 3,
+                  "scale": 0
+                },
+                "_packing": {
+                  "number": 4
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "vitalMeasurementHR",
+                "title": {
+                  "ja": "HR",
+                  "en": ""
+                },
+                "type": "number",
+                "required": false,
+                "number_format": {
+                  "precision": 3,
+                  "scale": 0
+                },
+                "_packing": {
+                  "number": 5
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "vitalMeasurementRR",
+                "title": {
+                  "ja": "RR",
+                  "en": ""
+                },
+                "type": "number",
+                "required": false,
+                "number_format": {
+                  "precision": 3,
+                  "scale": 0
+                },
+                "_packing": {
+                  "number": 6
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "vitalMeasurementSpO2",
+                "title": {
+                  "ja": "SpO2",
+                  "en": ""
+                },
+                "type": "number",
+                "required": false,
+                "number_format": {
+                  "precision": 4,
+                  "scale": 2
+                },
+                "_packing": {
+                  "number": 7
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 34
+          }
+        },
+        {
+          "@class": "group",
+          "name": "drugAdministration",
+          "title": {
+            "ja": "薬剤投与",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "drugAdministrationTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              },
+              {
+                "@class": "group",
+                "name": "drugAdministrationType",
+                "title": {
+                  "ja": "薬剤",
+                  "en": ""
+                },
+                "type": "single",
+                "required": false,
+                "choices": [
+                  {
+                    "value": 0,
+                    "title": {
+                      "ja": "アドレナリン",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 0
+                    }
+                  },
+                  {
+                    "value": 1,
+                    "title": {
+                      "ja": "その他",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 1
+                    }
+                  }
+                ],
+                "activation": {
+                  "1": [
+                    {
+                      "@class": "attribute",
+                      "name": "drugAdministrationOtherName",
+                      "title": {
+                        "ja": "その他薬剤名",
+                        "en": ""
+                      },
+                      "type": "text",
+                      "required": false,
+                      "max_length": 30
+                    }
+                  ]
+                },
+                "_packing": {
+                  "number": 1
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 35
+          }
+        },
+        {
+          "@class": "group",
+          "name": "wholeBodyObservation",
+          "title": {
+            "ja": "全身観察",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "wholeBodyObservationTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 36
+          }
+        },
+        {
+          "@class": "group",
+          "name": "FAST",
+          "title": {
+            "ja": "FAST",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "FASTTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 37
+          }
+        },
+        {
+          "@class": "group",
+          "name": "pupilMeasurement",
+          "title": {
+            "ja": "瞳孔測定",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "pupilMeasurementTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "pupilMeasurementRightSize",
+                "title": {
+                  "ja": "右",
+                  "en": ""
+                },
+                "type": "number",
+                "required": false,
+                "suffix": {
+                  "ja": "mm",
+                  "en": "mm"
+                },
+                "number_format": {
+                  "precision": 4,
+                  "scale": 2
+                },
+                "_packing": {
+                  "number": 1
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "pupilMeasurementLeftSize",
+                "title": {
+                  "ja": "左",
+                  "en": ""
+                },
+                "type": "number",
+                "required": false,
+                "suffix": {
+                  "ja": "mm",
+                  "en": "mm"
+                },
+                "number_format": {
+                  "precision": 4,
+                  "scale": 2
+                },
+                "_packing": {
+                  "number": 2
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "pupilMeasurementRightLightReflection",
+                "title": {
+                  "ja": "対光反射_右",
+                  "en": ""
+                },
+                "type": "single",
+                "required": false,
+                "choices": [
+                  {
+                    "value": 0,
+                    "title": {
+                      "ja": "+",
+                      "en": "+"
+                    },
+                    "_packing": {
+                      "number": 0
+                    }
+                  },
+                  {
+                    "value": 1,
+                    "title": {
+                      "ja": "-",
+                      "en": "-"
+                    },
+                    "_packing": {
+                      "number": 1
+                    }
+                  }
+                ],
+                "_packing": {
+                  "number": 3
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "pupilMeasurementLeftLightReflection",
+                "title": {
+                  "ja": "対光反射_左",
+                  "en": ""
+                },
+                "type": "single",
+                "required": false,
+                "choices": [
+                  {
+                    "value": 0,
+                    "title": {
+                      "ja": "+",
+                      "en": "+"
+                    },
+                    "_packing": {
+                      "number": 0
+                    }
+                  },
+                  {
+                    "value": 1,
+                    "title": {
+                      "ja": "-",
+                      "en": "-"
+                    },
+                    "_packing": {
+                      "number": 1
+                    }
+                  }
+                ],
+                "_packing": {
+                  "number": 4
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 38
+          }
+        },
+        {
+          "@class": "group",
+          "name": "electroCardiogram",
+          "title": {
+            "ja": "心電図",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "electroCardiogramTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "electroCardiogramObservation",
+                "title": {
+                  "ja": "所見",
+                  "en": ""
+                },
+                "type": "dropdown",
+                "required": false,
+                "choices": [
+                  {
+                    "value": 0,
+                    "title": {
+                      "ja": "心静止",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 0
+                    }
+                  },
+                  {
+                    "value": 1,
+                    "title": {
+                      "ja": "心室細動・心室頻拍",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 1
+                    }
+                  },
+                  {
+                    "value": 2,
+                    "title": {
+                      "ja": "無脈性電気活動",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 2
+                    }
+                  },
+                  {
+                    "value": 3,
+                    "title": {
+                      "ja": "不明",
+                      "en": ""
+                    },
+                    "_packing": {
+                      "number": 3
+                    }
+                  }
+                ],
+                "_packing": {
+                  "number": 1
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 39
+          }
+        },
+        {
+          "@class": "group",
+          "name": "deathConfirmation",
+          "title": {
+            "ja": "死亡確認",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "deathConfirmationTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 40
+          }
+        },
+        {
+          "@class": "group",
+          "name": "bloodGlucoseMeasurement",
+          "title": {
+            "ja": "血糖測定",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "bloodGlucoseMeasurementTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 41
+          }
+        },
+        {
+          "@class": "group",
+          "name": "otherMeasures",
+          "title": {
+            "ja": "その他",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "otherMeasuresTime",
+                "title": {
+                  "ja": "時間",
+                  "en": ""
+                },
+                "type": "time",
+                "required": false,
+                "_packing": {
+                  "number": 0
+                }
+              },
+              {
+                "@class": "attribute",
+                "name": "otherMeasuresDetails",
+                "title": {
+                  "ja": "詳細",
+                  "en": ""
+                },
+                "type": "text",
+                "required": false,
+                "max_length": 50,
+                "_packing": {
+                  "number": 1
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 42
+          }
+        },
+        {
+          "@class": "group",
+          "name": "equipment",
+          "title": {
+            "ja": "資機材",
+            "en": ""
+          },
+          "type": "multi",
+          "choices": [
+            {
+              "title": {
+                "ja": "酸素",
+                "en": ""
+              },
+              "value": 0,
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "title": {
+                "ja": "輸液",
+                "en": ""
+              },
+              "value": 1,
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "title": {
+                "ja": "十二誘導心電図",
+                "en": ""
+              },
+              "value": 2,
+              "_packing": {
+                "number": 2
+              }
+            },
+            {
+              "title": {
+                "ja": "エコー",
+                "en": ""
+              },
+              "value": 3,
+              "_packing": {
+                "number": 3
+              }
+            },
+            {
+              "title": {
+                "ja": "無線機",
+                "en": ""
+              },
+              "value": 4,
+              "_packing": {
+                "number": 4
+              }
+            },
+            {
+              "title": {
+                "ja": "救急薬品",
+                "en": ""
+              },
+              "value": 5,
+              "_packing": {
+                "number": 5
+              }
+            },
+            {
+              "title": {
+                "ja": "挿管チューブ",
+                "en": ""
+              },
+              "value": 6,
+              "_packing": {
+                "number": 6
+              }
+            },
+            {
+              "title": {
+                "ja": "除細動器",
+                "en": ""
+              },
+              "value": 7,
+              "_packing": {
+                "number": 7
+              }
+            },
+            {
+              "title": {
+                "ja": "吸引器",
+                "en": ""
+              },
+              "value": 8,
+              "_packing": {
+                "number": 8
+              }
+            },
+            {
+              "title": {
+                "ja": "その他",
+                "en": ""
+              },
+              "value": 9,
+              "_packing": {
+                "number": 9
+              }
+            }
+          ],
+          "activation": {
+            "1": [
+              {
+                "@class": "attribute",
+                "name": "equipmentInfusionDetail",
+                "title": {
+                  "ja": "輸液詳細",
+                  "en": ""
+                },
+                "type": "text",
+                "required": false,
+                "max_length": 30,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ],
+            "5": [
+              {
+                "@class": "attribute",
+                "name": "equipmentMedicineDetail",
+                "title": {
+                  "ja": "薬剤詳細",
+                  "en": ""
+                },
+                "type": "text",
+                "required": false,
+                "max_length": 30,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ],
+            "9": [
+              {
+                "@class": "attribute",
+                "name": "equipmentOtherDetail",
+                "title": {
+                  "ja": "その他詳細",
+                  "en": ""
+                },
+                "type": "text",
+                "required": false,
+                "max_length": 30,
+                "_packing": {
+                  "number": 0
+                }
+              }
+            ]
+          },
+          "_packing": {
+            "number": 43
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "doctor",
+          "title": {
+            "ja": "医師",
+            "en": ""
+          },
+          "type": "string",
+          "required": false,
+          "max_length": 15,
+          "_packing": {
+            "number": 44
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "forwardDistance",
+          "title": {
+            "ja": "往路距離",
+            "en": ""
+          },
+          "type": "number",
+          "required": false,
+          "suffix": {
+            "ja": "km",
+            "en": "km"
+          },
+          "number_format": {
+            "precision": 7,
+            "scale": 3
+          },
+          "_packing": {
+            "number": 45
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "returnDistance",
+          "title": {
+            "ja": "復路距離",
+            "en": ""
+          },
+          "type": "number",
+          "required": false,
+          "suffix": {
+            "ja": "km",
+            "en": "km"
+          },
+          "number_format": {
+            "precision": 7,
+            "scale": 3
+          },
+          "_packing": {
+            "number": 46
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "nurse",
+          "title": {
+            "ja": "看護師",
+            "en": ""
+          },
+          "type": "string",
+          "required": false,
+          "max_length": 15,
+          "_packing": {
+            "number": 47
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "medicalServiceFeeRequest",
+          "title": {
+            "ja": "診療報酬請求",
+            "en": ""
+          },
+          "type": "single",
+          "choices": [
+            {
+              "title": {
+                "ja": "可",
+                "en": ""
+              },
+              "value": 0,
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "title": {
+                "ja": "不可",
+                "en": ""
+              },
+              "value": 1,
+              "_packing": {
+                "number": 1
+              }
+            }
+          ],
+          "_packing": {
+            "number": 48
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "medicalDepartmentReceiptMark",
+          "title": {
+            "ja": "医事課領収印",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "_packing": {
+            "number": 49
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "paramedic",
+          "title": {
+            "ja": "救命士",
+            "en": ""
+          },
+          "type": "string",
+          "required": false,
+          "max_length": 15,
+          "_packing": {
+            "number": 50
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "driver",
+          "title": {
+            "ja": "運転者",
+            "en": ""
+          },
+          "type": "string",
+          "required": false,
+          "max_length": 15,
+          "_packing": {
+            "number": 51
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "caseStudyMeeting",
+          "title": {
+            "ja": "症例検討会",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "_packing": {
+            "number": 52
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "driveRecorderCheck",
+          "title": {
+            "ja": "ドラレコチェック",
+            "en": ""
+          },
+          "type": "check",
+          "required": false,
+          "_packing": {
+            "number": 53
+          }
+        },
+        {
+          "@class": "repeat",
+          "name": "progressRecord",
+          "title": {
+            "ja": "経過記録",
+            "en": "Progress Record"
+          },
+          "attribute": {
+            "type": "hidden_count",
+            "name": "progressRecordCount"
+          },
+          "items": [
+            {
+              "@class": "attribute",
+              "name": "progressRecordTime",
+              "title": {
+                "ja": "経過記録_時間",
+                "en": ""
+              },
+              "type": "time",
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "@class": "attribute",
+              "name": "progressRecordContent",
+              "title": {
+                "ja": "経過記録_内容",
+                "en": ""
+              },
+              "type": "text",
+              "max_length": 30,
+              "_packing": {
+                "number": 1
+              }
+            }
+          ],
+          "_packing": {
+            "number": 54
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "PCInput",
+          "title": {
+            "ja": "PC入力",
+            "en": ""
+          },
+          "type": "single",
+          "choices": [
+            {
+              "title": {
+                "ja": "済",
+                "en": ""
+              },
+              "value": 0,
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "title": {
+                "ja": "未",
+                "en": ""
+              },
+              "value": 1,
+              "_packing": {
+                "number": 1
+              }
+            }
+          ],
+          "_packing": {
+            "number": 55
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "generalAffairsDivisionSubmission",
+          "title": {
+            "ja": "庶務課提出",
+            "en": ""
+          },
+          "type": "single",
+          "choices": [
+            {
+              "title": {
+                "ja": "済",
+                "en": ""
+              },
+              "value": 0,
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "title": {
+                "ja": "未",
+                "en": ""
+              },
+              "value": 1,
+              "_packing": {
+                "number": 1
+              }
+            }
+          ],
+          "_packing": {
+            "number": 56
+          }
+        },
+        {
+          "@class": "attribute",
+          "name": "explanationOfHomeVisitCharges",
+          "title": {
+            "ja": "往診料の説明",
+            "en": ""
+          },
+          "type": "single",
+          "choices": [
+            {
+              "title": {
+                "ja": "済",
+                "en": ""
+              },
+              "value": 0,
+              "_packing": {
+                "number": 0
+              }
+            },
+            {
+              "title": {
+                "ja": "未",
+                "en": ""
+              },
+              "value": 1,
+              "_packing": {
+                "number": 1
+              }
+            },
+            {
+              "title": {
+                "ja": "拒否",
+                "en": ""
+              },
+              "value": 2,
+              "_packing": {
+                "number": 2
+              }
+            }
+          ],
+          "_packing": {
+            "number": 57
+          }
+        },
+        {
+          "@class": "combo",
+          "name": "staffName1",
+          "title": {
+            "ja": "",
+            "en": ""
+          },
+          "attributes": [
+            {
+              "@class": "attribute",
+              "name": "staffName1",
+              "title": {
+                "ja": "スタッフ名（1）",
+                "en": ""
+              },
+              "type": "string",
+              "required": false,
+              "_packing": {
+                "number": 58
+              }
+            },
+            {
+              "@class": "attribute",
+              "name": "staffName2",
+              "title": {
+                "ja": "スタッフ名（2）",
+                "en": ""
+              },
+              "type": "string",
+              "required": false,
+              "_packing": {
+                "number": 59
+              }
+            }
+          ]
+        },
+        {
+          "@class": "combo",
+          "name": "staffName2",
+          "title": {
+            "ja": "",
+            "en": ""
+          },
+          "attributes": [
+            {
+              "@class": "attribute",
+              "name": "staffName3",
+              "title": {
+                "ja": "スタッフ名（3）",
+                "en": ""
+              },
+              "type": "string",
+              "required": false,
+              "_packing": {
+                "number": 60
+              }
+            },
+            {
+              "@class": "attribute",
+              "name": "staffName4",
+              "title": {
+                "ja": "スタッフ名（4）",
+                "en": ""
+              },
+              "type": "string",
+              "required": false,
+              "_packing": {
+                "number": 61
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
